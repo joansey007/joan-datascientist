@@ -1,0 +1,55 @@
+Uploading jupyter notebook
+---------------------------
+First method:
+
+Create github account and github repository Upload the new sample notebook to our GitHub repository.
+Go to GitHub in the browser,click the link to the left.
+Click on the sharing-github repository
+Click on the Upload file button
+Drag and drop the sample notebook or click the choose your files link to select the sample notebook.
+We will see any files that we have uploaded at the bottom of the drag and drop area.
+Add a message describing the change we are about to make.
+Type “Adds sample notebook” in the subject field.
+We can either add the same message below in the extended description or leave it blank.
+Click on Commit changes button to complete the upload.
+After commiting the change we should see that there are now two files in the repository: 1) the README and 2) the new sample notebook 
+================================================================================================================
+Second method:
+
+Create a GitHub repository,initialize the repository with a README file to ensure that a master branch is created.
+Configure your notebook instance with your GitHub user information.
+Go to the AI Platform Notebooks page in the Google Cloud Console.
+Go to the AI Platform Notebooks page
+Open your notebook instance by clicking Open JupyterLab.
+Select Git -> Open Terminal to open a Git terminal window.
+
+In the Git terminal window, enter the following commands to configure your Git user name and email:
+
+git config --global user.name "your-name"
+git config --global user.email "your-email"
+
+If your GitHub account requires SSH authentication, there are a few more steps to connect your account. From your Git terminal window in AI Platform Notebooks, follow GitHub's instructions for generating a new SSH key. Then follow the instructions for adding that SSH key to your GitHub account.
+Close the Git terminal window.
+Clone your GitHub repository in your notebook instance.
+Copy the URL for your GitHub repository. You can get this from the Clone or download option in your GitHub repository.
+Get GitHub repository URL
+In your notebook instance, select the folder where you want to clone the GitHub repository.
+Paste repository URL and clone.
+Your notebook instance shows your repository as a new folder. If you do not see your cloned GitHub repository as a folder, click the Refresh File List button.
+Double click your repository folder to open it.
+Add a new notebook to your notebook instance.
+Select File -> New -> Notebook. This creates a new notebook named "Untitled.ipynb". Select the kernel for your new notebook. For example, "Python 3". 
+Add a notebook file
+Select the Git tab. Your new notebook is listed in the Untracked grouping.
+
+  Untracked notebook:
+      Right-click the new notebook and select Track to add the new notebook as a file for your GitHub       repository. Your notebook is now added to the Staged grouping in the Git tab.
+
+  Staged notebook:
+      To commit your new notebook to your GitHub repository, add a commit comment in the Git tab and click the       Commit button.
+
+Select Git -> Open terminal to open a Git terminal window.
+Enter the git push command in the Git terminal window. When prompted, enter your GitHub username and password.
+
+
+
